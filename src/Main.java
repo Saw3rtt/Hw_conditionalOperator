@@ -54,7 +54,7 @@ public class Main {
         else if(ageChild > 5 && ageChild < 14){
             System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
         }
-        else if(ageChild >= 14){
+        else{
             System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься без сопровождения взрослого.");
         }
         System.out.println();
