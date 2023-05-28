@@ -74,6 +74,20 @@ public class Main {
         }else{
             System.out.println("Если в вагоне " + human + " человек, то осталось "+ freePlaces + " стоячих мест");
         }
+        System.out.println();
+
+        //task7
+        int one = 10;
+        int two = 11;
+        int three = 9;
+        if(one > two && one > three){
+            System.out.println(one);
+        }
+        else if(two > one && two > three){
+            System.out.println(two);
+        }else{
+            System.out.println(three);
+        }
 
 
 
