@@ -19,10 +19,33 @@ public class Main {
         //task3
         int speed = 50;
         if(speed > 60){
-            System.out.println("Если скорость, " + speed + " то придется заплатить штраф.");
+            System.out.println("Если скорость " + speed + ",то придется заплатить штраф.");
         }else{
-            System.out.println("Если скорость, " + speed + " то можно ездить спокойно");
+            System.out.println("Если скорость " + speed + ",то можно ездить спокойно");
         }
+        System.out.println();
+
+        //task4
+        int ageHuman = 60;
+        if(ageHuman < 2){
+            System.out.println("Если возраст человека равен " + ageHuman + ",то ему пора спать");
+        }
+        if(ageHuman >= 2 && ageHuman <=6){
+            System.out.println("Если возраст человека равен " + ageHuman + ",то ему нужно ходить в детский сад");
+        }
+        if(ageHuman >=7 && ageHuman < 18){
+            System.out.println("Если возраст человека равен " + ageHuman + ",то ему нужно ходить в школу");
+        }
+        if(ageHuman >=18 && ageHuman < 24){
+            System.out.println("Если возраст человека равен " + ageHuman + ",то его место в университете");
+        }
+        if(ageHuman >=24 && ageHuman < 60 ){
+            System.out.println("Если возраст человека равен " + ageHuman + ",то ему пора ходить на работу");
+        }else{
+            System.out.println("Если возраст человека равен " + ageHuman + ",то он может отдохнуть");
+        }
+
+
 
     }
         }
