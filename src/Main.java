@@ -30,16 +30,16 @@ public class Main {
         if(ageHuman < 2){
             System.out.println("Если возраст человека равен " + ageHuman + ",то ему пора спать");
         }
-        if(ageHuman >= 2 && ageHuman <=6){
+        else if(ageHuman >= 2 && ageHuman <=6){
             System.out.println("Если возраст человека равен " + ageHuman + ",то ему нужно ходить в детский сад");
         }
-        if(ageHuman >=7 && ageHuman < 18){
+        else if(ageHuman >=7 && ageHuman < 18){
             System.out.println("Если возраст человека равен " + ageHuman + ",то ему нужно ходить в школу");
         }
-        if(ageHuman >=18 && ageHuman < 24){
+        else if(ageHuman >=18 && ageHuman < 24){
             System.out.println("Если возраст человека равен " + ageHuman + ",то его место в университете");
         }
-        if(ageHuman >=24 && ageHuman < 60 ){
+        else if(ageHuman >=24 && ageHuman < 60 ){
             System.out.println("Если возраст человека равен " + ageHuman + ",то ему пора ходить на работу");
         }else{
             System.out.println("Если возраст человека равен " + ageHuman + ",то он может отдохнуть");
@@ -58,6 +58,23 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься без сопровождения взрослого.");
         }
         System.out.println();
+
+        //task6
+        int human = 70;
+        int capacityWagon = 102;
+        int seatPlace = 60;
+        int freePlaces = capacityWagon - human;
+        int freeSeatPlace = seatPlace - human;
+        int freeStandingPlace = capacityWagon - seatPlace;
+        if(human >= capacityWagon){
+            System.out.println("Если в вагоне " + human + ",то вагон уже полностью забит" );
+        }
+        else if(human < capacityWagon && human < seatPlace){
+            System.out.println("Если в вагоне " + human + " человек, то осталось "+ freeSeatPlace + " сидячих мест и " + freeStandingPlace + " стоячих мест.");
+        }else{
+            System.out.println("Если в вагоне " + human + " человек, то осталось "+ freePlaces + " стоячих мест");
+        }
+
 
 
 
