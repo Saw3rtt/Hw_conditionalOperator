@@ -44,6 +44,21 @@ public class Main {
         }else{
             System.out.println("Если возраст человека равен " + ageHuman + ",то он может отдохнуть");
         }
+        System.out.println();
+
+        //task5
+        int ageChild = 15;
+        if(ageChild < 5){
+            System.out.println("Если возраст ребенка равен " + ageChild + ",то он не может кататься на аттракционе");
+        }
+        else if(ageChild > 5 && ageChild < 14){
+            System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
+        }
+        else if(ageChild >= 14){
+            System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься без сопровождения взрослого.");
+        }
+        System.out.println();
+
 
 
 
